@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  vidma-tickets:
+    build: .
+    volumes:
+      - .:/tmp:rw
+    env_file:
+      - .env
