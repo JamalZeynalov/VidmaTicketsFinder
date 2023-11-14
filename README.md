@@ -17,6 +17,7 @@ Create .env file in the root of the project and add environment variables to it:
 #### Required
 
 ```dotenv
+# Put your Telegram chat id instead of 123456789
 TELEGRAM_CHAT_ID=123456789
 ```
 
@@ -33,10 +34,11 @@ NO_RESULTS_NOTIFICATION_HOUR=16 # 17 by default
 # Run in background Docker container (RECOMMENDED)
 
 1. Install and run Docker
-2. Start `@VidmaTicketsBot` to receive notifications
-3. Start Telegram bot `@RawDataBot` to get your CHAT_ID
+2. Start `@VidmaTicketsBot` to receive notifications [LINK](https://telegram.me/VidmaTicketsBot)
+3. Start Telegram bot `@RawDataBot` to get your TELEGRAM_CHAT_ID. [LINK](https://telegram.me/rawdatabot)
 4. Fill .env file with environment variables
-5. Run `docker-compose up -d`
+5. Run `docker-compose up -d` <br>
+   * (then you can check logs with `vidma-tickets-finder-vidma-tickets-1` or via desktop app Dashboard)
 6. Wait for your tickets to be found and receive notifications in Telegram
 
 # Run on your machine
@@ -44,7 +46,12 @@ NO_RESULTS_NOTIFICATION_HOUR=16 # 17 by default
 1. Install Python 3.9+
 2. Install requirements: `pip install -r requirements.txt`
 3. Start `@VidmaTicketsBot` to receive notifications [LINK](https://telegram.me/VidmaTicketsBot)
-4. Start Telegram bot `@RawDataBot` to get your CHAT_ID. [LINK](https://telegram.me/rawdatabot)
+4. Start Telegram bot `@RawDataBot` to get your TELEGRAM_CHAT_ID. [LINK](https://telegram.me/rawdatabot)
 5. Fill .env file with environment variables
 6. Run `python vidma.py`
 7. Wait for your tickets to be found and receive notifications in Telegram
+
+
+# Get TELEGRAM_CHAT_ID
+Image below shows how to get your TELEGRAM_CHAT_ID using `@RawDataBot`:<br>
+<img src="https://raw.githubusercontent.com/JamalZeynalov/vidma-tickets-finder/master/chat_id_screenshot.png" width=400 alt="chat_id">

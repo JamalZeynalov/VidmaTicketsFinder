@@ -16,7 +16,7 @@ logging.info("This is an informational message. Container is started!")
 
 load_dotenv(".env")
 
-TIMEOUT = int(os.environ.get("TIMEOUT", 20))
+TIMEOUT = int(os.environ.get("MINUTES_WAIT_BETWEEN_SEARCHES", 20))
 NO_RESULTS_NOTIFICATION_HOUR = int(os.environ.get("NO_RESULTS_NOTIFICATION_HOUR", 17))
 
 bot_token = "6883929632:AAGZlbgDpQZ5SF1jb6MKaECJwViF36PFKCo"  # VidmaTicketsBot
